@@ -17,6 +17,9 @@ export default class Sub extends BaseEntity {
   @Column({ unique: true })
   name: string;
 
+  @Column()
+  title: string;
+
   @Column({ type: "text", nullable: true })
   description: string;
 
